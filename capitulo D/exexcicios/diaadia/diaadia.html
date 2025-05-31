@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIA A DIA</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: auto;
+            background-color: rgba(240, 161, 96, 0.829);
+        }
+        #branca {
+            background-color: white;
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.473);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    <div id="branca">
+
+        <div id="tx">
+            <p></p>
+        </div>
+
+        <div>
+            <img src="" alt="">
+        </div>
+    </div>
+    <footer><p>@CursoemVideo</p></footer>
+    <script>
+        var agora = new Date()
+        var h = agora.getHours()
+        var e = document.getElementById('div#tx')
+
+        if(h < 12){
+            var e = console.log(`Agora são ${h} horas.`)
+        }
+    </script>
+</body>
+</html>
