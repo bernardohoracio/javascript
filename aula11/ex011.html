@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <form>
+        <label for="Ipais">Países</label>
+        <select name="Paises" id="Ipais">
+            <option value="">---ESCOLHA---</option>
+            <optgroup label="AMÉRICA LATINA">
+                <option value="BR">BRASIL</option>
+                <option value="AR">ARGENTINA</option>
+                <option value="UR">URUGUAI</option>
+            </optgroup>
+            <optgroup label="AMÉRICA DO NORTE">
+                <option value="USA">ESTADOS UNIDOS</option>
+                <option value="CND">CANADÁ</option>
+                <option value="MX">MÉXICO</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <div id="res"></div>
+
+    <script>
+       var select = document.getElementById('Ipais')
+       var res = document.getElementById('res')
+
+       select.addEventListener('change', function () {
+        var pais = select.value;
+
+        if (pais === 'BR') {
+            res.innerHTML = 'Você é Brasileiro';
+
+        } else if (pais === '') {
+            res.innerHTML = 'Por favor, escolha um país.';
+        } else {
+            res.innerHTML = 'Você é estrangeiro';
+        }
+
+        console.log(`Você vive em: ${pais}`)
+       });
+    </script>
+</body>
+</html>
