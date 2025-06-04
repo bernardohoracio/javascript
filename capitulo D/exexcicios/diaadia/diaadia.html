@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIA A DIA</title>
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             margin: auto;
-            background-color: rgba(240, 161, 96, 0.829);
+            
+            
         }
         #branca {
             background-color: white;
-            width: 600px;
-            height: 400px;
+            width: 500px;
             margin: auto;
             border-radius: 10px;
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.473);
+        }
+        #imagem {
+            width: 400px;
+            height: 300px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #tx{
+            padding: 10px;
         }
     </style>
 </head>
@@ -28,22 +38,35 @@
     <div id="branca">
 
         <div id="tx">
-            <p></p>
+            <p ></p>
         </div>
 
         <div>
-            <img src="" alt="">
+            <img id="imagem" src="" alt="">
         </div>
     </div>
     <footer><p>@CursoemVideo</p></footer>
-    <script>
-        var agora = new Date()
-        var h = agora.getHours()
-        var e = document.getElementById('div#tx')
+    <script > 
+    var agora = new Date()
+    var h = agora.getHours()
+    var res = document.getElementById ('tx')
+    
+    res.innerHTML = `<p>Agora são ${h} horas.</p>`
 
-        if(h < 12){
-            var e = console.log(`Agora são ${h} horas.`)
-        }
+    var img = document.getElementById ('imagem')
+
+    if (h < 11 && h > 5) {
+        img.src = "imagens/pexels-torsten-kellermann-349167-955656.jpg"
+        document.body.style.backgroundColor = 'yellow'
+    } else if (h > 12 & h < 18) {
+        img.src = "imagens/pexels-anderson-martinsz-2386144.jpg"
+        document.body.style.backgroundColor = 'rgba(240, 161, 96, 0.829)'
+    } else {
+        img.src = "imagens/pexels-rok-romih-1746122-3489072.jpg"
+        document.body.style.backgroundColor = 'darkgray'
+    }
+
+
     </script>
 </body>
 </html>

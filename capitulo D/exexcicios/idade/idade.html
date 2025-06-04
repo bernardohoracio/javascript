@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: auto;
+            
+            
+        }
+        #branca {
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.473);
+        }
+        #imagem {
+            width: 400px;
+            height: 300px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #tx{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    <div id="branca">
+
+        <div id="tx">
+            <form action="">
+                <label for="">Ano de nascimento:</label>
+                <input type="number" name="data" id="Idata">
+                <br>
+
+                <label for="">sexo:</label>
+                <input type="radio" name="sexo" id="sxmasc" class="sexos"><label for="sxmasc">Masculino</label>
+                <input type="radio" name="sexo" id="sxfem" class="sexos"><label for="sxfem">Feminino</label> <br>
+                <input type="button" value="verifivar" onclick="verifivar()">
+            </form>
+            <div id="res">
+
+            </div>
+        </div>
+        <div>
+
+        </div>
+
+        <div>
+            <img id="imagem" src="" alt="">
+        </div>
+    </div>
+    <footer><p>@CursoemVideo</p></footer>
+
+    <script>
+        function verifivar() {
+            var data = new Date()
+            var ano = data.getFullYear()
+            var fano = document.getElementById('Idata')
+            var res = document.getElementById('res')
+
+            if (fano.value.length == 0 ||  Number(fano.value) > ano)  {
+                window.alert('[ERRO] VERIFIQUE SE ESTA TUDO CORRETO')
+            } else {
+                var fsex = document.getElementsByClassName('sexo')
+                var idade = ano - Number(fano.value)
+                
+                var genero = ''
+                
+                if (fsex[0].checked) {
+                    genero = 'homem'
+                } else if (fsex[1].ariaChecked) {
+                    genero ='mulher'
+                }
+
+                res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+            }
+       
+            
+
+        }
+      
+    </script>
+</body>
+</html>
