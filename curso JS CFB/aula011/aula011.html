@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício Ternário</title>
+</head>
+<body>
+  <h2>Verifique se o número é par ou ímpar</h2>
+  <input type="number" id="numero" placeholder="Digite um número">
+  <button onclick="verificar()">Verificar</button>
+  <p id="res"></p>
+
+  <script>
+    function  verificar() {
+        let num = document.getElementById('numero').value
+        let resultado = document.getElementById('res')
+        let resp = (num%2 == 0) ? "PAR" : "impar"
+        resultado.innerHTML = resp
+    }
+  </script>
+</body>
+</html>
