@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador</title>
+</head>
+<body>
+    <button onclick="somar()">Somar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function somar(){
+            let soma = 0
+            let num = 0
+            let res = document.getElementById('resultado')
+
+            do {
+                num =  Number(prompt('Digite um número (caso digite 0, ira parar):'))
+                soma += num
+            }
+            while (num !== 0) 
+                res.innerHTML = `A soma total é: ${soma}`
+        
+        }
+    </script>
+</body>
+</html>
