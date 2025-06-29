@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dias</title>
 </head>
 <body>
-    <form action="">
         <input type="number" name="number" id="numero" min="1" max="7">
-    </form>
+        <button onclick="verificar()">Verificar dia</button>
+    <p id="resultado"></p>
+
+
+    <script>
+        function verificar(){
+            let num = parseInt(document.getElementById('numero').value)
+            let res = document.getElementById('resultado')
+
+            let dia = ''
+
+            switch (num) {
+
+                case 1: 
+                dia = "domingo"
+                break
+                case 2:
+                dia = "segunda"
+                break
+
+                case 3:
+                dia = "terça"
+                break
+
+                case 4:
+                dia = "quarta"
+                break
+
+                case 5:
+                dia = "quinta"
+                break
+
+                case 6:
+                dia = "sexta"
+                break
+
+                case 7:
+                dia = "sábado"
+                break
+            }
+            res.textContent = dia;
+        }
+         
+    </script>
 </body>
 </html>

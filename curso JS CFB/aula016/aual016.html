@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <input type="number" name="numero" id="numero" min="1" >
+    <button onclick="tabuada()">Calcular tabuada</button>
+
+    <h3>tabuada normal</h3>
+    <p id="resultado"></p>
+    <h3>tabuada invertida</h3>
+    <p id="resultado2"></p>
+
+    <script>
+        function tabuada(){
+            let num = document.getElementById ('numero').value
+            let res = document.getElementById ('resultado')
+            let res2 = document.getElementById ('resultado2')
+            res.innerHTML = ''
+            res2.innerHTML = ''
+
+            for (let t = 1; t <= 10; t++) {
+                res.innerHTML += `${num} X ${t} = ${num * t} <br>`
+            }
+
+            for (let t2 = 10; t2 >= 1; t2--){
+                res2.innerHTML += `${num} X ${t2} = ${num * t2} <br>`
+            }
+        }
+    </script>
+</body>
+</html>
