@@ -1,8 +1,27 @@
-function mudarTexto() {
-    let d1 = document.getElementById ('d1')
-    let d2 = document.getElementById ('d2')
-    let d3 = document.getElementById ('d3')
-    d1.innerHTML = 'CFB cursos'
-    d2.innerHTML = 'CFB cursos'
-    d3.innerHTML = 'CFB cursos'
+/*function canal() {
+    let n1 = 10 
+    let n2 = 2
+    let res = n1*n2
+    if (res%2 == 0){
+        return 'Par'
+    } else {
+        return 'Impar'
+    } 
 }
+
+let res = canal()
+
+console.log(res)
+*/
+
+
+
+function dobro(){
+    let d = 10
+
+    return d * 2
+}
+
+let res = dobro()
+
+console.log(res)
