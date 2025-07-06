@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.caixa1{
+    border: 2px solid black;
+    background-color: lightgray;
+    width: 400px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curso{
+    border: 3px solid gray;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+.c1{
+    background-color: #ccc;
+    color: #444;
+
+}
+
+.c2{
+    background-color: #444;
+    color:#ccc ;
+}
+
+.destaque{
+    background-color: #800 !important;
+    color:#fcc !important;
+    border-color: #f00 !important;
+}
