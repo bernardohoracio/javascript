@@ -16,10 +16,10 @@
     </legend>
     <script>
        function calcular(){
-        var txtv = document.getElementById('txtvel')
+        var txtv = Number(document.getElementById('txtvel').value)
         var res = document.getElementById('res')
-        var vel = Number(txtv.value)
-        res.innerHTML = `<p>Sua velocidade atual é de ${vel}</p>`
+        
+        res.innerHTML = `<p>Sua velocidade atual é de ${txtv}</p>`
         
        }    
     </script>
