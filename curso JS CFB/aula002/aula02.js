@@ -1,4 +1,4 @@
-"use strict" //Modo estrito
+//Modo estrito
 
-let nome = 'bernas'
+nome = 'bernardo'
 console.log(`Nome: ${nome}`)
