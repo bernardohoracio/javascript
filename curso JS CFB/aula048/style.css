@@ -1,0 +1,55 @@
+@charset "UTF 8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+}
+
+div#array {
+    background-color: lightgreen;
+    border: 3px solid darkgreen;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+div#caixa_verificar{
+    background-color: rgb(173, 177, 230);
+    border: 3px solid darkblue;
+    border-radius: 6px;
+    padding: 5px;
+    
+}
+
+div#res{
+    background-color: lightcoral;
+    border: 3px solid darkred;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+input {
+    width: 20vw;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: rgb(22, 22, 70);
+    color: white;
+    width: 10vw;
+    height: 3.5vh;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+div {
+    margin: 5px;
+}
